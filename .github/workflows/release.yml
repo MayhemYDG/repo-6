@@ -1,0 +1,117 @@
+name: Publish Docker image
+
+on:
+  push:
+    branches: [master]
+    tags:
+      - "v[0-9]+.[0-9]+.[0-9]+*"
+
+jobs:
+  cross-compile:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v3
+      - name: Setup Go
+        uses: actions/setup-go@v3
+        with:
+          go-version: "1.21"
+      - name: Cache Go
+        id: go-cache
+        uses: actions/cache@v3
+        with:
+          path: |
+            ~/go/bin
+            ~/go/pkg/mod
+          key: go-cache-${{ runner.os }}-${{ hashFiles('**/go.sum') }}
+      - name: Install promu
+        run: make promu
+        shell: bash
+      - name: Build
+        run: ~/go/bin/promu -c .promu.yml crossbuild -v -p linux/amd64 -p linux/arm64 -p darwin/amd64 -p darwin/arm64
+      - name: Upload Binaries
+        uses: actions/upload-artifact@v3
+        with:
+          name: binaries
+          path: ./build/*
+
+  push_to_registries:
+    name: Push Docker image to multiple registries
+    runs-on: ubuntu-latest
+    permissions:
+      packages: write
+      contents: read
+      id-token: write
+    needs: [cross-compile]
+    if: (github.ref == 'refs/heads/master' || startsWith(github.ref, 'refs/tags/v'))
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v3
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v2
+
+      - name: Sanitize branch name and create version
+        id: create-version
+        env:
+          BRANCH: ${{github.ref_name}}
+          RUN_NUMBER: ${{github.run_number}}
+          BASE_VERSION: "0.0.0"
+        run: |
+          # let's simply use the k8s namespace rules (even stricter) and have the same version(-suffix) for everything
+          # lowercase everything and replace all invalid characters with '-' and trim to 60 characters
+          SANITIZED_BRANCH=$(echo -n "${BRANCH}" | tr '[:upper:]' '[:lower:]' | tr -C 'a-z0-9' '-')
+          SANITIZED_BRANCH="${SANITIZED_BRANCH:0:60}"
+
+          BUILD_VERSION="${BASE_VERSION}-${SANITIZED_BRANCH}-${RUN_NUMBER}"
+          echo "BUILD_VERSION=${BUILD_VERSION}" | tee -a $GITHUB_ENV $GITHUB_OUTPUT
+
+      - name: Download Binaries
+        uses: actions/download-artifact@v3
+        with:
+          name: binaries
+          path: ./build/
+
+      - run: chmod +x bin/*
+
+      - id: login-gcp
+        name: Authenticate with Google Cloud
+        uses: google-github-actions/auth@v1
+        with:
+          token_format: access_token
+          workload_identity_provider: ${{secrets.GCR_WORKLOAD_IDENTITY_PROVIDER}}
+          service_account: ${{secrets.GCR_SERVICE_ACCOUNT}}
+          access_token_lifetime: 1800s
+
+      - name: Log in to EU registry
+        uses: docker/login-action@v2
+        with:
+          registry: us-docker.pkg.dev
+          username: oauth2accesstoken
+          password: ${{ steps.login-gcp.outputs.access_token }}
+
+      - name: Log in to EU registry
+        uses: docker/login-action@v2
+        with:
+          registry: europe-docker.pkg.dev
+          username: oauth2accesstoken
+          password: ${{ steps.login-gcp.outputs.access_token }}
+
+      - name: Log in to Asia registry
+        uses: docker/login-action@v2
+        with:
+          registry: asia-docker.pkg.dev
+          username: oauth2accesstoken
+          password: ${{ steps.login-gcp.outputs.access_token }}
+
+      - name: build and push
+        uses: docker/build-push-action@v5
+        with:
+          push: true
+          context: .
+          file: Dockerfile
+          platforms: linux/amd64,linux/arm64,darwin/arm64,darwin/amd64
+          tags: |
+            ${{secrets.GCR_ASIA_IMAGE}}:${{steps.create-version.outputs.BUILD_VERSION}}
+            ${{secrets.GCR_EUROPE_IMAGE}}:${{steps.create-version.outputs.BUILD_VERSION}}
+            ${{secrets.GCR_US_IMAGE}}:${{steps.create-version.outputs.BUILD_VERSION}}
