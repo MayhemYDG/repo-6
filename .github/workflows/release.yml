@@ -33,7 +33,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: binaries
-          path: ./build/*
+          path: .build/*
 
   push_to_registries:
     name: Push Docker image to multiple registries
@@ -70,9 +70,9 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: binaries
-          path: ./build/
+          path: .build/
 
-      - run: chmod +x bin/*
+      - run: chmod +x .build/**/*
 
       - id: login-gcp
         name: Authenticate with Google Cloud
