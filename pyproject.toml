@@ -7,7 +7,7 @@ maintainers = ["Jonas Krüger Svensson <jonasks@hotmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.6"
-pytest = "^6.1.1"
+pytest = "^7.0.1"
 
 [tool.poetry.dev-dependencies]
 
