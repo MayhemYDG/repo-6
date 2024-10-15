@@ -256,7 +256,7 @@ jobs:
         go-version-file: go.mod
     - continue-on-error: true
       name: golangci-lint
-      uses: golangci/golangci-lint-action@aaa42aa0628b4ae2578232a66b541047968fac86
+      uses: golangci/golangci-lint-action@971e284b6050e8a5849b72094c50ab08da042db8
       with:
         args: -v --timeout=5m
         skip-build-cache: true
