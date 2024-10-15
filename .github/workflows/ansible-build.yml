@@ -254,7 +254,7 @@ jobs:
         path: ansible_collections/${{env.NAMESPACE}}/${{env.COLLECTION_NAME}}
     - continue-on-error: true
       name: Set up Python
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v5
       with:
         python-version: 3.8
     - continue-on-error: true
