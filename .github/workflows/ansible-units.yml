@@ -271,7 +271,7 @@ jobs:
         version
       working-directory: ./ansible_collections/${{env.NAMESPACE}}/${{env.COLLECTION_NAME}}
     - continue-on-error: true
-      uses: codecov/codecov-action@v3
+      uses: codecov/codecov-action@v4
       with:
         fail_ci_if_error: false
     - name: after
