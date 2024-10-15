@@ -260,7 +260,7 @@ jobs:
         '
     - continue-on-error: true
       name: "Deploy \U0001F680"
-      uses: JamesIves/github-pages-deploy-action@v4.4.0
+      uses: JamesIves/github-pages-deploy-action@v4.6.8
       with:
         BRANCH: gh-pages
         FOLDER: ~/output
