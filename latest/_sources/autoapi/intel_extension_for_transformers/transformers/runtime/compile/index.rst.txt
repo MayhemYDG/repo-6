@@ -1,0 +1,38 @@
+intel_extension_for_transformers.transformers.runtime.compile
+=============================================================
+
+.. py:module:: intel_extension_for_transformers.transformers.runtime.compile
+
+.. autoapi-nested-parse::
+
+   The module of compile.
+
+
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 1
+
+   /autoapi/intel_extension_for_transformers/transformers/runtime/compile/extractors/index
+   /autoapi/intel_extension_for_transformers/transformers/runtime/compile/graph/index
+   /autoapi/intel_extension_for_transformers/transformers/runtime/compile/loaders/index
+   /autoapi/intel_extension_for_transformers/transformers/runtime/compile/ops/index
+   /autoapi/intel_extension_for_transformers/transformers/runtime/compile/sub_graph/index
+
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 1
+
+   /autoapi/intel_extension_for_transformers/transformers/runtime/compile/graph_utils/index
+   /autoapi/intel_extension_for_transformers/transformers/runtime/compile/logger/index
+   /autoapi/intel_extension_for_transformers/transformers/runtime/compile/onnx_utils/index
+   /autoapi/intel_extension_for_transformers/transformers/runtime/compile/optimizer/index
+   /autoapi/intel_extension_for_transformers/transformers/runtime/compile/tf_utils/index
+   /autoapi/intel_extension_for_transformers/transformers/runtime/compile/torch_utils/index
+
+

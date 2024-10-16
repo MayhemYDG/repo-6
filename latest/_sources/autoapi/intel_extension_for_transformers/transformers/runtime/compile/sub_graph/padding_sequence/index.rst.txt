@@ -1,0 +1,32 @@
+intel_extension_for_transformers.transformers.runtime.compile.sub_graph.padding_sequence
+========================================================================================
+
+.. py:module:: intel_extension_for_transformers.transformers.runtime.compile.sub_graph.padding_sequence
+
+.. autoapi-nested-parse::
+
+   The PaddingSequence pattern.
+
+
+
+Classes
+-------
+
+.. autoapisummary::
+
+   intel_extension_for_transformers.transformers.runtime.compile.sub_graph.padding_sequence.PaddingSequence
+
+
+Module Contents
+---------------
+
+.. py:class:: PaddingSequence
+
+
+
+   The PaddingSequence pattern.
+
+   Fuse the original sub-graph into the custom acceleration 'PaddingSequence' graph.
+   The search strategy is based on the following pattern mapping configs for different models.
+
+

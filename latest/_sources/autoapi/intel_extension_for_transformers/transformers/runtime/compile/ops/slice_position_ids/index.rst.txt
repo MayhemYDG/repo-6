@@ -1,0 +1,35 @@
+intel_extension_for_transformers.transformers.runtime.compile.ops.slice_position_ids
+====================================================================================
+
+.. py:module:: intel_extension_for_transformers.transformers.runtime.compile.ops.slice_position_ids
+
+.. autoapi-nested-parse::
+
+   The neural engine operator mapping file.
+
+
+
+Classes
+-------
+
+.. autoapisummary::
+
+   intel_extension_for_transformers.transformers.runtime.compile.ops.slice_position_ids.SlicePositionIds
+
+
+Module Contents
+---------------
+
+.. py:class:: SlicePositionIds
+
+
+
+   Register the SlicePositionIds operator.
+
+
+   .. py:method:: set_attr(framework, node)
+
+      Extract the node attr.
+
+
+

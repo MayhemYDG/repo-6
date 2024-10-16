@@ -1,0 +1,11 @@
+intel_extension_for_transformers.transformers.quantization
+==========================================================
+
+.. py:module:: intel_extension_for_transformers.transformers.quantization
+
+.. autoapi-nested-parse::
+
+   Quantization: specify the supported quantization mode.
+
+
+

@@ -1,0 +1,32 @@
+intel_extension_for_transformers.transformers.runtime.compile.sub_graph.last_layer_shape
+========================================================================================
+
+.. py:module:: intel_extension_for_transformers.transformers.runtime.compile.sub_graph.last_layer_shape
+
+.. autoapi-nested-parse::
+
+   The LastLayerShape Pattern.
+
+
+
+Classes
+-------
+
+.. autoapisummary::
+
+   intel_extension_for_transformers.transformers.runtime.compile.sub_graph.last_layer_shape.LastLayerShape
+
+
+Module Contents
+---------------
+
+.. py:class:: LastLayerShape
+
+
+
+   The LastLayerShape pattern.
+
+   Fuse the original sub-graph into the custom acceleration 'LastLayerShape' graph.
+   The search strategy is based on the following pattern mapping configs for different models.
+
+

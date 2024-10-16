@@ -1,0 +1,41 @@
+models.backbone
+===============
+
+.. py:module:: models.backbone
+
+.. autoapi-nested-parse::
+
+   Backbone modules.
+
+
+
+Classes
+-------
+
+.. autoapisummary::
+
+   models.backbone.FrozenBatchNorm2d
+   models.backbone.Backbone
+
+
+Module Contents
+---------------
+
+.. py:class:: FrozenBatchNorm2d(n)
+
+
+
+   BatchNorm2d where the batch statistics and the affine parameters are fixed.
+
+   Copy-paste from torchvision.misc.ops with added eps before rqsrt,
+   without which any other models than torchvision.models.resnet[18,34,50,101]
+   produce nans.
+
+
+.. py:class:: Backbone(name: str, train_backbone: bool, return_interm_layers: bool, dilation: bool)
+
+
+
+   ResNet backbone with frozen BatchNorm.
+
+

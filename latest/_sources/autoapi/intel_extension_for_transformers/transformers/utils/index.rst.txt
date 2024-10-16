@@ -1,0 +1,24 @@
+intel_extension_for_transformers.transformers.utils
+===================================================
+
+.. py:module:: intel_extension_for_transformers.transformers.utils
+
+.. autoapi-nested-parse::
+
+   Utils for optimization.
+
+
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 1
+
+   /autoapi/intel_extension_for_transformers/transformers/utils/config/index
+   /autoapi/intel_extension_for_transformers/transformers/utils/get_throughput/index
+   /autoapi/intel_extension_for_transformers/transformers/utils/metrics/index
+   /autoapi/intel_extension_for_transformers/transformers/utils/objectives/index
+   /autoapi/intel_extension_for_transformers/transformers/utils/utility/index
+
+

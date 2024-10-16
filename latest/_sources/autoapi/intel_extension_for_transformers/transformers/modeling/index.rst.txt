@@ -1,0 +1,22 @@
+intel_extension_for_transformers.transformers.modeling
+======================================================
+
+.. py:module:: intel_extension_for_transformers.transformers.modeling
+
+.. autoapi-nested-parse::
+
+   Modeling class.
+
+
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 1
+
+   /autoapi/intel_extension_for_transformers/transformers/modeling/model/index
+   /autoapi/intel_extension_for_transformers/transformers/modeling/modeling_bert_dynamic/index
+   /autoapi/intel_extension_for_transformers/transformers/modeling/modeling_roberta_dynamic/index
+
+

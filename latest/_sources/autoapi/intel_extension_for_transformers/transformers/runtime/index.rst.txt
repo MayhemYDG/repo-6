@@ -1,0 +1,36 @@
+intel_extension_for_transformers.transformers.runtime
+=====================================================
+
+.. py:module:: intel_extension_for_transformers.transformers.runtime
+
+.. autoapi-nested-parse::
+
+   The module of Neural Engine.
+
+
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 1
+
+   /autoapi/intel_extension_for_transformers/transformers/runtime/compile/index
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   intel_extension_for_transformers.transformers.runtime.neural_engine_bin
+
+
+Package Contents
+----------------
+
+.. py:function:: neural_engine_bin()
+
+   Entry point for C++ interface.
+
+

@@ -1,0 +1,20 @@
+intel_extension_for_transformers.transformers.pruner
+====================================================
+
+.. py:module:: intel_extension_for_transformers.transformers.pruner
+
+.. autoapi-nested-parse::
+
+   init.
+
+
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 1
+
+   /autoapi/intel_extension_for_transformers/transformers/pruner/pruning/index
+
+

@@ -1,0 +1,21 @@
+intel_extension_for_transformers.transformers.dynamic
+=====================================================
+
+.. py:module:: intel_extension_for_transformers.transformers.dynamic
+
+.. autoapi-nested-parse::
+
+   Dynamic package.
+
+
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 1
+
+   /autoapi/intel_extension_for_transformers/transformers/dynamic/drop_and_restore_utils/index
+   /autoapi/intel_extension_for_transformers/transformers/dynamic/evolution/index
+
+

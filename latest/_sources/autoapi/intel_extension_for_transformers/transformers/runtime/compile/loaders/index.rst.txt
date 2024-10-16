@@ -1,0 +1,20 @@
+intel_extension_for_transformers.transformers.runtime.compile.loaders
+=====================================================================
+
+.. py:module:: intel_extension_for_transformers.transformers.runtime.compile.loaders
+
+.. autoapi-nested-parse::
+
+   The module of the neural engine graph loader.
+
+
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 1
+
+   /autoapi/intel_extension_for_transformers/transformers/runtime/compile/loaders/loader/index
+
+

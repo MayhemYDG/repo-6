@@ -1,0 +1,11 @@
+intel_extension_for_transformers.tools.utils
+============================================
+
+.. py:module:: intel_extension_for_transformers.tools.utils
+
+.. autoapi-nested-parse::
+
+   Utility.
+
+
+

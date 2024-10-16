@@ -1,0 +1,32 @@
+intel_extension_for_transformers.transformers.runtime.compile.sub_graph.InnerproductReshapeFusion
+=================================================================================================
+
+.. py:module:: intel_extension_for_transformers.transformers.runtime.compile.sub_graph.InnerproductReshapeFusion
+
+.. autoapi-nested-parse::
+
+   The InnerproductReshapeFusion Pattern.
+
+
+
+Classes
+-------
+
+.. autoapisummary::
+
+   intel_extension_for_transformers.transformers.runtime.compile.sub_graph.InnerproductReshapeFusion.InnerproductReshapeFusion
+
+
+Module Contents
+---------------
+
+.. py:class:: InnerproductReshapeFusion
+
+
+
+   The InnerproductReshapeFusion pattern.
+
+   Fuse the original sub-graph into the custom acceleration 'InnerproductReshapeFusion' graph.
+   The search strategy is based on the following pattern mapping configs for different models.
+
+

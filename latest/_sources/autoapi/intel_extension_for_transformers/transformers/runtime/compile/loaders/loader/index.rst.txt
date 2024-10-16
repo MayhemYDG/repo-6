@@ -1,0 +1,29 @@
+intel_extension_for_transformers.transformers.runtime.compile.loaders.loader
+============================================================================
+
+.. py:module:: intel_extension_for_transformers.transformers.runtime.compile.loaders.loader
+
+.. autoapi-nested-parse::
+
+   The loader file.
+
+
+
+Classes
+-------
+
+.. autoapisummary::
+
+   intel_extension_for_transformers.transformers.runtime.compile.loaders.loader.Loader
+
+
+Module Contents
+---------------
+
+.. py:class:: Loader
+
+
+
+   Load the model into the frontend of different inference frameworks.
+
+
