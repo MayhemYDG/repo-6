@@ -427,7 +427,7 @@ dependencies = [
  "chrono",
  "fnv",
  "futures-util",
- "http",
+ "http 0.2.9",
  "indexmap",
  "mime",
  "multer",
@@ -657,8 +657,8 @@ dependencies = [
  "aws-types",
  "bytes 1.4.0",
  "hex",
- "http",
- "hyper",
+ "http 0.2.9",
+ "hyper 0.14.26",
  "ring",
  "time",
  "tokio",
@@ -676,7 +676,7 @@ dependencies = [
  "aws-smithy-http 0.51.0",
  "aws-smithy-types 0.51.0",
  "aws-types",
- "http",
+ "http 0.2.9",
  "regex",
  "tracing 0.1.37",
 ]
@@ -691,8 +691,8 @@ dependencies = [
  "aws-smithy-types 0.51.0",
  "aws-types",
  "bytes 1.4.0",
- "http",
- "http-body",
+ "http 0.2.9",
+ "http-body 0.4.5",
  "lazy_static",
  "percent-encoding",
  "pin-project-lite",
@@ -717,7 +717,7 @@ dependencies = [
  "aws-smithy-xml",
  "aws-types",
  "bytes 1.4.0",
- "http",
+ "http 0.2.9",
  "tokio-stream",
  "tower",
 ]
@@ -739,7 +739,7 @@ dependencies = [
  "aws-smithy-types 0.51.0",
  "aws-types",
  "bytes 1.4.0",
- "http",
+ "http 0.2.9",
  "tokio-stream",
  "tower",
 ]
@@ -761,7 +761,7 @@ dependencies = [
  "aws-smithy-types 0.51.0",
  "aws-types",
  "bytes 1.4.0",
- "http",
+ "http 0.2.9",
  "tokio-stream",
  "tower",
 ]
@@ -783,7 +783,7 @@ dependencies = [
  "aws-smithy-types 0.51.0",
  "aws-types",
  "bytes 1.4.0",
- "http",
+ "http 0.2.9",
  "tower",
 ]
 
@@ -804,7 +804,7 @@ dependencies = [
  "aws-smithy-types 0.51.0",
  "aws-types",
  "bytes 1.4.0",
- "http",
+ "http 0.2.9",
  "tokio-stream",
  "tower",
 ]
@@ -830,8 +830,8 @@ dependencies = [
  "aws-types",
  "bytes 1.4.0",
  "bytes-utils",
- "http",
- "http-body",
+ "http 0.2.9",
+ "http-body 0.4.5",
  "tokio-stream",
  "tower",
  "tracing 0.1.37",
@@ -855,7 +855,7 @@ dependencies = [
  "aws-smithy-xml",
  "aws-types",
  "bytes 1.4.0",
- "http",
+ "http 0.2.9",
  "tokio-stream",
  "tower",
 ]
@@ -877,7 +877,7 @@ dependencies = [
  "aws-smithy-types 0.51.0",
  "aws-types",
  "bytes 1.4.0",
- "http",
+ "http 0.2.9",
  "tokio-stream",
  "tower",
 ]
@@ -900,7 +900,7 @@ dependencies = [
  "aws-smithy-xml",
  "aws-types",
  "bytes 1.4.0",
- "http",
+ "http 0.2.9",
  "tower",
 ]
 
@@ -914,7 +914,7 @@ dependencies = [
  "aws-smithy-eventstream",
  "aws-smithy-http 0.51.0",
  "aws-types",
- "http",
+ "http 0.2.9",
  "tracing 0.1.37",
 ]
 
@@ -929,7 +929,7 @@ dependencies = [
  "bytes 1.4.0",
  "form_urlencoded",
  "hex",
- "http",
+ "http 0.2.9",
  "once_cell",
  "percent-encoding",
  "regex",
@@ -948,7 +948,7 @@ dependencies = [
  "form_urlencoded",
  "hex",
  "hmac",
- "http",
+ "http 0.2.9",
  "once_cell",
  "percent-encoding",
  "regex",
@@ -981,8 +981,8 @@ dependencies = [
  "crc32c",
  "crc32fast",
  "hex",
- "http",
- "http-body",
+ "http 0.2.9",
+ "http-body 0.4.5",
  "md-5",
  "pin-project-lite",
  "sha1",
@@ -1002,9 +1002,9 @@ dependencies = [
  "aws-smithy-types 0.51.0",
  "bytes 1.4.0",
  "fastrand",
- "http",
- "http-body",
- "hyper",
+ "http 0.2.9",
+ "http-body 0.4.5",
+ "hyper 0.14.26",
  "hyper-tls",
  "pin-project-lite",
  "tokio",
@@ -1034,9 +1034,9 @@ dependencies = [
  "bytes 1.4.0",
  "bytes-utils",
  "futures-core",
- "http",
- "http-body",
- "hyper",
+ "http 0.2.9",
+ "http-body 0.4.5",
+ "hyper 0.14.26",
  "once_cell",
  "percent-encoding",
  "pin-project-lite",
@@ -1054,9 +1054,9 @@ dependencies = [
  "bytes 1.4.0",
  "bytes-utils",
  "futures-core",
- "http",
- "http-body",
- "hyper",
+ "http 0.2.9",
+ "http-body 0.4.5",
+ "hyper 0.14.26",
  "once_cell",
  "percent-encoding",
  "pin-project-lite",
@@ -1074,9 +1074,9 @@ dependencies = [
  "bytes 1.4.0",
  "bytes-utils",
  "futures-core",
- "http",
- "http-body",
- "hyper",
+ "http 0.2.9",
+ "http-body 0.4.5",
+ "hyper 0.14.26",
  "once_cell",
  "percent-encoding",
  "pin-project-lite",
@@ -1092,8 +1092,8 @@ checksum = "20c96d7bd35e7cf96aca1134b2f81b1b59ffe493f7c6539c051791cbbf7a42d3"
 dependencies = [
  "aws-smithy-http 0.51.0",
  "bytes 1.4.0",
- "http",
- "http-body",
+ "http 0.2.9",
+ "http-body 0.4.5",
  "pin-project-lite",
  "tower",
  "tracing 0.1.37",
@@ -1108,8 +1108,8 @@ dependencies = [
  "aws-smithy-http 0.54.4",
  "aws-smithy-types 0.54.4",
  "bytes 1.4.0",
- "http",
- "http-body",
+ "http 0.2.9",
+ "http-body 0.4.5",
  "pin-project-lite",
  "tower",
  "tracing 0.1.37",
@@ -1191,7 +1191,7 @@ dependencies = [
  "aws-smithy-client",
  "aws-smithy-http 0.51.0",
  "aws-smithy-types 0.51.0",
- "http",
+ "http 0.2.9",
  "rustc_version 0.4.0",
  "tracing 0.1.37",
  "zeroize",
@@ -1205,12 +1205,12 @@ checksum = "f8175979259124331c1d7bf6586ee7e0da434155e4b2d48ec2c8386281d8df39"
 dependencies = [
  "async-trait",
  "axum-core",
- "bitflags",
+ "bitflags 1.3.2",
  "bytes 1.4.0",
  "futures-util",
- "http",
- "http-body",
- "hyper",
+ "http 0.2.9",
+ "http-body 0.4.5",
+ "hyper 0.14.26",
  "itoa",
  "matchit",
  "memchr",
@@ -1235,8 +1235,8 @@ dependencies = [
  "async-trait",
  "bytes 1.4.0",
  "futures-util",
- "http",
- "http-body",
+ "http 0.2.9",
+ "http-body 0.4.5",
  "mime",
  "rustversion",
  "tower-layer",
@@ -1435,6 +1435,12 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "bef38d45163c2f1dde094a7dfd33ccf595c92905c8f8f4fdc18d06fb1037718a"
 
 [[package]]
+name = "bitflags"
+version = "2.6.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "b048fb63fd8b5923fc5aa7b340d8e156aec7ec02f0c78fa8a6ddc2613f6f71de"
+
+[[package]]
 name = "bitmask-enum"
 version = "2.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1520,8 +1526,8 @@ dependencies = [
  "futures-core",
  "futures-util",
  "hex",
- "http",
- "hyper",
+ "http 0.2.9",
+ "hyper 0.14.26",
  "hyper-rustls 0.23.1",
  "hyperlocal",
  "log",
@@ -1782,11 +1788,13 @@ dependencies = [
 
 [[package]]
 name = "cc"
-version = "1.0.77"
+version = "1.1.30"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "e9f73505338f7d905b19d18738976aae232eb46b8efc15554ffc56deb5d9ebe4"
+checksum = "b16803a61b81d9eabb7eae2588776c4c1e584b738ede45fdbb4c972cec1e9945"
 dependencies = [
  "jobserver",
+ "libc",
+ "shlex",
 ]
 
 [[package]]
@@ -1915,7 +1923,7 @@ checksum = "a0610544180c38b88101fecf2dd634b174a62eef6946f84dfc6a7127512b381c"
 dependencies = [
  "ansi_term",
  "atty",
- "bitflags",
+ "bitflags 1.3.2",
  "strsim 0.8.0",
  "textwrap",
  "unicode-width",
@@ -1949,7 +1957,7 @@ version = "4.1.14"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "351f9ad9688141ed83dfd8f5fb998a06225ef444b48ff4dc43de6d409b7fd10b"
 dependencies = [
- "bitflags",
+ "bitflags 1.3.2",
  "clap_lex",
  "is-terminal",
  "strsim 0.10.0",
@@ -2349,7 +2357,7 @@ version = "0.25.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "e64e6c0fbe2c17357405f7c758c1ef960fce08bdfb2c03d88d2a18d7e09c4b67"
 dependencies = [
- "bitflags",
+ "bitflags 1.3.2",
  "crossterm_winapi",
  "libc",
  "mio",
@@ -2365,7 +2373,7 @@ version = "0.26.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "a84cda67535339806297f1b331d6dd6320470d2a0fe65381e79ee9e156dd3d13"
 dependencies = [
- "bitflags",
+ "bitflags 1.3.2",
  "crossterm_winapi",
  "futures-core",
  "libc",
@@ -3567,7 +3575,7 @@ dependencies = [
  "futures-core",
  "futures-sink",
  "futures-util",
- "http",
+ "http 0.2.9",
  "indexmap",
  "slab",
  "tokio",
@@ -3635,10 +3643,10 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "f3e372db8e5c0d213e0cd0b9be18be2aca3d44cf2fe30a9d46a65581cd454584"
 dependencies = [
  "base64 0.13.1",
- "bitflags",
+ "bitflags 1.3.2",
  "bytes 1.4.0",
  "headers-core",
- "http",
+ "http 0.2.9",
  "httpdate",
  "mime",
  "sha1",
@@ -3650,7 +3658,7 @@ version = "0.2.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "e7f66481bfee273957b1f20485a4ff3362987f85b2c236580d81b4eb7a326429"
 dependencies = [
- "http",
+ "http 0.2.9",
 ]
 
 [[package]]
@@ -3723,7 +3731,7 @@ name = "heim-disk"
 version = "0.1.0-rc.1"
 source = "git+https://github.com/vectordotdev/heim.git?branch=update-nix#76fa765c7ed7fbe43d1465bf52da6b8d19f2d2a9"
 dependencies = [
- "bitflags",
+ "bitflags 1.3.2",
  "cfg-if",
  "core-foundation",
  "heim-common",
@@ -3770,7 +3778,7 @@ name = "heim-net"
 version = "0.1.0-rc.1"
 source = "git+https://github.com/vectordotdev/heim.git?branch=update-nix#76fa765c7ed7fbe43d1465bf52da6b8d19f2d2a9"
 dependencies = [
- "bitflags",
+ "bitflags 1.3.2",
  "cfg-if",
  "heim-common",
  "heim-runtime",
@@ -3845,14 +3853,35 @@ dependencies = [
 ]
 
 [[package]]
+name = "http"
+version = "1.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "21b9ddb458710bc376481b842f5da65cdf31522de232c1ca8146abce2a358258"
+dependencies = [
+ "bytes 1.4.0",
+ "fnv",
+ "itoa",
+]
+
+[[package]]
 name = "http-body"
 version = "0.4.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "d5f38f16d184e36f2408a55281cd658ecbd3ca05cce6d6510a176eca393e26d1"
 dependencies = [
  "bytes 1.4.0",
- "http",
+ "http 0.2.9",
  "pin-project-lite",
+]
+
+[[package]]
+name = "http-body"
+version = "1.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "1efedce1fb8e6913f23e0c92de8e62cd5b772a67e7b3946df930a62566c93184"
+dependencies = [
+ "bytes 1.4.0",
+ "http 1.1.0",
 ]
 
 [[package]]
@@ -3871,7 +3900,7 @@ dependencies = [
  "async-channel",
  "base64 0.13.1",
  "futures-lite",
- "http",
+ "http 0.2.9",
  "infer 0.2.3",
  "pin-project-lite",
  "rand 0.7.3",
@@ -3911,8 +3940,8 @@ dependencies = [
  "futures-core",
  "futures-util",
  "h2",
- "http",
- "http-body",
+ "http 0.2.9",
+ "http-body 0.4.5",
  "httparse",
  "httpdate",
  "itoa",
@@ -3925,13 +3954,25 @@ dependencies = [
 ]
 
 [[package]]
+name = "hyper"
+version = "1.5.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "bbbff0a806a4728c99295b254c8838933b5b082d75e3cb70c8dab21fdfbcfa9a"
+dependencies = [
+ "bytes 1.4.0",
+ "http 1.1.0",
+ "http-body 1.0.1",
+ "tokio",
+]
+
+[[package]]
 name = "hyper-openssl"
 version = "0.9.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "d6ee5d7a8f718585d1c3c61dfde28ef5b0bb14734b4db13f5ada856cdc6c612b"
 dependencies = [
- "http",
- "hyper",
+ "http 0.2.9",
+ "hyper 0.14.26",
  "linked_hash_set",
  "once_cell",
  "openssl",
@@ -3943,6 +3984,17 @@ dependencies = [
 ]
 
 [[package]]
+name = "hyper-openssl"
+version = "0.10.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "527d4d619ca2c2aafa31ec139a3d1d60bf557bf7578a1f20f743637eccd9ca19"
+dependencies = [
+ "hyper 1.5.0",
+ "openssl",
+ "openssl-sys",
+]
+
+[[package]]
 name = "hyper-proxy"
 version = "0.9.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -3951,8 +4003,8 @@ dependencies = [
  "bytes 1.4.0",
  "futures 0.3.28",
  "headers",
- "http",
- "hyper",
+ "http 0.2.9",
+ "hyper 0.14.26",
  "openssl",
  "tokio",
  "tokio-openssl",
@@ -3965,8 +4017,8 @@ version = "0.23.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "59df7c4e19c950e6e0e868dcc0a300b09a9b88e9ec55bd879ca819087a77355d"
 dependencies = [
- "http",
- "hyper",
+ "http 0.2.9",
+ "hyper 0.14.26",
  "log",
  "rustls 0.20.7",
  "rustls-native-certs 0.6.2",
@@ -3980,8 +4032,8 @@ version = "0.24.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "0646026eb1b3eea4cd9ba47912ea5ce9cc07713d105b1a14698f4e6433d348b7"
 dependencies = [
- "http",
- "hyper",
+ "http 0.2.9",
+ "hyper 0.14.26",
  "rustls 0.21.0",
  "tokio",
  "tokio-rustls 0.24.0",
@@ -3993,7 +4045,7 @@ version = "0.4.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "bbb958482e8c7be4bc3cf272a766a2b0bf1a6755e7a6ae777f017a31d11b13b1"
 dependencies = [
- "hyper",
+ "hyper 0.14.26",
  "pin-project-lite",
  "tokio",
  "tokio-io-timeout",
@@ -4006,7 +4058,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "d6183ddfa99b85da61a140bea0efc93fdf56ceaa041b37d553518030827f9905"
 dependencies = [
  "bytes 1.4.0",
- "hyper",
+ "hyper 0.14.26",
  "native-tls",
  "tokio",
  "tokio-native-tls",
@@ -4020,7 +4072,7 @@ checksum = "0fafdf7b2b2de7c9784f76e02c0935e65a8117ec3b768644379983ab333ac98c"
 dependencies = [
  "futures-util",
  "hex",
- "hyper",
+ "hyper 0.14.26",
  "pin-project",
  "tokio",
 ]
@@ -4125,7 +4177,7 @@ version = "0.9.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "f8069d3ec154eb856955c1c0fbffefbf5f3c40a104ec912d4797314c1801abff"
 dependencies = [
- "bitflags",
+ "bitflags 1.3.2",
  "inotify-sys",
  "libc",
 ]
@@ -4277,9 +4329,9 @@ checksum = "8eaf4bc02d17cbdd7ff4c7438cafcdf7fb9a4613313ad11b4f8fefe7d3fa0130"
 
 [[package]]
 name = "jobserver"
-version = "0.1.25"
+version = "0.1.32"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "068b1ee6743e4d11fb9c6a1e6064b3693a1b600e7f5f5988047d98b3dc9fb90b"
+checksum = "48d1dbcbbeb6a7fec7e059840aa538bd62aaccf972c7346c4d9d2059312853d0"
 dependencies = [
  "libc",
 ]
@@ -4362,7 +4414,7 @@ dependencies = [
  "base64 0.21.2",
  "bytes 1.4.0",
  "chrono",
- "http",
+ "http 0.2.9",
  "percent-encoding",
  "serde",
  "serde-value",
@@ -4406,7 +4458,7 @@ version = "1.0.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "8367585489f01bc55dd27404dcf56b95e6da061a256a666ab23be9ba96a2e587"
 dependencies = [
- "bitflags",
+ "bitflags 1.3.2",
  "libc",
 ]
 
@@ -4443,10 +4495,10 @@ dependencies = [
  "dirs-next",
  "either",
  "futures 0.3.28",
- "http",
- "http-body",
- "hyper",
- "hyper-openssl",
+ "http 0.2.9",
+ "http-body 0.4.5",
+ "hyper 0.14.26",
+ "hyper-openssl 0.9.2",
  "hyper-timeout",
  "jsonpath_lib",
  "k8s-openapi 0.18.0",
@@ -4474,7 +4526,7 @@ checksum = "b16c1653fd0bda69a6bdb363167edbb72d28817db340d2fe8cb89dc07d354e05"
 dependencies = [
  "chrono",
  "form_urlencoded",
- "http",
+ "http 0.2.9",
  "json-patch",
  "k8s-openapi 0.18.0",
  "once_cell",
@@ -5007,7 +5059,7 @@ checksum = "ebe15399de63ad4294c80069967736cbb87ebe467a8cd0629df9cab88a6fbde6"
 dependencies = [
  "async-trait",
  "base64 0.13.1",
- "bitflags",
+ "bitflags 1.3.2",
  "bson",
  "chrono",
  "derivative",
@@ -5055,7 +5107,7 @@ dependencies = [
  "bytes 1.4.0",
  "encoding_rs",
  "futures-util",
- "http",
+ "http 0.2.9",
  "httparse",
  "log",
  "memchr",
@@ -5179,7 +5231,7 @@ version = "0.23.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "9f866317acbd3a240710c63f065ffb1e4fd466259045ccb504130b7f668f35c6"
 dependencies = [
- "bitflags",
+ "bitflags 1.3.2",
  "cc",
  "cfg-if",
  "libc",
@@ -5191,7 +5243,7 @@ name = "nix"
 version = "0.26.2"
 source = "git+https://github.com/vectordotdev/nix.git?branch=memfd/gnu/musl#6c53a918d2d5bf4307fd60a19d9e10913ae71eeb"
 dependencies = [
- "bitflags",
+ "bitflags 1.3.2",
  "cfg-if",
  "libc",
  "memoffset 0.7.1",
@@ -5275,7 +5327,7 @@ version = "6.0.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "4d9ba6c734de18ca27c8cef5cd7058aa4ac9f63596131e4c7e41e579319032a2"
 dependencies = [
- "bitflags",
+ "bitflags 1.3.2",
  "filetime",
  "fsevent-sys",
  "inotify",
@@ -5452,7 +5504,7 @@ dependencies = [
  "base64 0.13.1",
  "chrono",
  "getrandom 0.2.10",
- "http",
+ "http 0.2.9",
  "rand 0.8.5",
  "reqwest",
  "serde",
@@ -5493,7 +5545,7 @@ version = "6.4.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "8c4b31c8722ad9171c6d77d3557db078cab2bd50afcc9d09c8b315c59df8ca4f"
 dependencies = [
- "bitflags",
+ "bitflags 1.3.2",
  "libc",
  "once_cell",
  "onig_sys",
@@ -5536,8 +5588,8 @@ dependencies = [
  "chrono",
  "flagset",
  "futures 0.3.28",
- "http",
- "hyper",
+ "http 0.2.9",
+ "hyper 0.14.26",
  "log",
  "md-5",
  "once_cell",
@@ -5560,7 +5612,7 @@ checksum = "87af7097640fedbe64718ac1c9b0549d72da747a3f527cd089215f96c6f691d5"
 dependencies = [
  "base64 0.13.1",
  "chrono",
- "http",
+ "http 0.2.9",
  "itertools",
  "log",
  "num-bigint",
@@ -5578,11 +5630,11 @@ dependencies = [
 
 [[package]]
 name = "openssl"
-version = "0.10.54"
+version = "0.10.67"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "69b3f656a17a6cbc115b5c7a40c616947d213ba182135b014d6051b73ab6f019"
+checksum = "7b8cefcf97f41316955f9294cd61f639bdcfa9f2f230faac6cb896aa8ab64704"
 dependencies = [
- "bitflags",
+ "bitflags 2.6.0",
  "cfg-if",
  "foreign-types",
  "libc",
@@ -5618,14 +5670,23 @@ dependencies = [
 ]
 
 [[package]]
-name = "openssl-sys"
-version = "0.9.88"
+name = "openssl-src"
+version = "300.3.2+3.3.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "c2ce0f250f34a308dcfdbb351f511359857d4ed2134ba715a4eadd46e1ffd617"
+checksum = "a211a18d945ef7e648cc6e0058f4c548ee46aab922ea203e0d30e966ea23647b"
+dependencies = [
+ "cc",
+]
+
+[[package]]
+name = "openssl-sys"
+version = "0.9.104"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "45abf306cbf99debc8195b66b7346498d7b10c210de50418b5ccd7ceba08c741"
 dependencies = [
  "cc",
  "libc",
- "openssl-src",
+ "openssl-src 300.3.2+3.3.2",
  "pkg-config",
  "vcpkg",
 ]
@@ -6242,7 +6303,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "4e35c06b98bf36aba164cc17cb25f7e232f5c4aeea73baa14b8a9f0d92dbfa65"
 dependencies = [
  "bit-set",
- "bitflags",
+ "bitflags 1.3.2",
  "byteorder",
  "lazy_static",
  "num-traits",
@@ -6564,7 +6625,7 @@ version = "10.6.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "a6823ea29436221176fe662da99998ad3b4db2c7f31e7b6f5fe43adccd6320bb"
 dependencies = [
- "bitflags",
+ "bitflags 1.3.2",
 ]
 
 [[package]]
@@ -6679,7 +6740,7 @@ version = "0.2.16"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "fb5a58c1855b4b6819d59012155603f0b22ad30cad752600aadfcb695265519a"
 dependencies = [
- "bitflags",
+ "bitflags 1.3.2",
 ]
 
 [[package]]
@@ -6688,7 +6749,7 @@ version = "0.3.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "567664f262709473930a4bf9e51bf2ebf3348f2e748ccc50dea20646858f8f29"
 dependencies = [
- "bitflags",
+ "bitflags 1.3.2",
 ]
 
 [[package]]
@@ -6755,9 +6816,9 @@ dependencies = [
  "futures-core",
  "futures-util",
  "h2",
- "http",
- "http-body",
- "hyper",
+ "http 0.2.9",
+ "http-body 0.4.5",
+ "hyper 0.14.26",
  "hyper-rustls 0.24.0",
  "hyper-tls",
  "ipnet",
@@ -6961,7 +7022,7 @@ version = "0.35.13"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "727a1a6d65f786ec22df8a81ca3121107f235970dc1705ed681d3e6e8b9cd5f9"
 dependencies = [
- "bitflags",
+ "bitflags 1.3.2",
  "errno 0.2.8",
  "io-lifetimes 0.7.5",
  "libc",
@@ -6975,7 +7036,7 @@ version = "0.37.19"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "acf8729d8542766f1b2cf77eb034d52f40d375bb8b615d0b147089946e16613d"
 dependencies = [
- "bitflags",
+ "bitflags 1.3.2",
  "errno 0.3.1",
  "io-lifetimes 1.0.11",
  "libc",
@@ -7096,7 +7157,7 @@ version = "11.0.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "5dfc8644681285d1fb67a467fb3021bfea306b99b4146b166a1fe3ada965eece"
 dependencies = [
- "bitflags",
+ "bitflags 1.3.2",
  "cfg-if",
  "clipboard-win",
  "libc",
@@ -7216,7 +7277,7 @@ version = "2.9.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "1fc758eb7bffce5b308734e9b0c1468893cae9ff70ebf13e7090be8dcbcc83a8"
 dependencies = [
- "bitflags",
+ "bitflags 1.3.2",
  "core-foundation",
  "core-foundation-sys",
  "libc",
@@ -7561,6 +7622,12 @@ dependencies = [
  "libc",
  "winapi",
 ]
+
+[[package]]
+name = "shlex"
+version = "1.3.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "0fda2ff0d084019ba4d7c6f371c95d8fd75ce3524c3cb8fb653a3023f6323e64"
 
 [[package]]
 name = "signal-hook"
@@ -8439,9 +8506,9 @@ dependencies = [
  "futures-core",
  "futures-util",
  "h2",
- "http",
- "http-body",
- "hyper",
+ "http 0.2.9",
+ "http-body 0.4.5",
+ "hyper 0.14.26",
  "hyper-timeout",
  "percent-encoding",
  "pin-project",
@@ -8498,12 +8565,12 @@ checksum = "5d1d42a9b3f3ec46ba828e8d376aec14592ea199f70a06a548587ecd1c4ab658"
 dependencies = [
  "async-compression 0.3.15",
  "base64 0.20.0",
- "bitflags",
+ "bitflags 1.3.2",
  "bytes 1.4.0",
  "futures-core",
  "futures-util",
- "http",
- "http-body",
+ "http 0.2.9",
+ "http-body 0.4.5",
  "http-range-header",
  "mime",
  "pin-project-lite",
@@ -8779,7 +8846,7 @@ version = "0.19.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "ccdd26cbd674007e649a272da4475fb666d3aa0ad0531da7136db6fab0e5bad1"
 dependencies = [
- "bitflags",
+ "bitflags 1.3.2",
  "cassowary",
  "crossterm 0.25.0",
  "unicode-segmentation",
@@ -8795,7 +8862,7 @@ dependencies = [
  "base64 0.13.1",
  "byteorder",
  "bytes 1.4.0",
- "http",
+ "http 0.2.9",
  "httparse",
  "log",
  "rand 0.8.5",
@@ -8814,7 +8881,7 @@ dependencies = [
  "byteorder",
  "bytes 1.4.0",
  "data-encoding",
- "http",
+ "http 0.2.9",
  "httparse",
  "log",
  "rand 0.8.5",
@@ -9159,10 +9226,10 @@ dependencies = [
  "heim",
  "hex",
  "hostname",
- "http",
- "http-body",
- "hyper",
- "hyper-openssl",
+ "http 0.2.9",
+ "http-body 0.4.5",
+ "hyper 0.14.26",
+ "hyper-openssl 0.10.2",
  "hyper-proxy",
  "indexmap",
  "indoc",
@@ -9194,7 +9261,7 @@ dependencies = [
  "opendal",
  "openssl",
  "openssl-probe",
- "openssl-src",
+ "openssl-src 111.25.0+1.1.1t",
  "opentelemetry-proto",
  "ordered-float 3.7.0",
  "paste",
@@ -9453,7 +9520,7 @@ dependencies = [
  "futures 0.3.28",
  "futures-util",
  "headers",
- "http",
+ "http 0.2.9",
  "hyper-proxy",
  "indexmap",
  "metrics",
@@ -9738,8 +9805,8 @@ dependencies = [
  "futures-channel",
  "futures-util",
  "headers",
- "http",
- "hyper",
+ "http 0.2.9",
+ "hyper 0.14.26",
  "log",
  "mime",
  "mime_guess",
@@ -9980,7 +10047,7 @@ version = "0.6.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "cd9db37ecb5b13762d95468a2fc6009d4b2c62801243223aabd44fca13ad13c8"
 dependencies = [
- "bitflags",
+ "bitflags 1.3.2",
  "widestring 1.0.2",
  "windows-sys 0.45.0",
 ]
@@ -10163,7 +10230,7 @@ dependencies = [
  "futures 0.3.28",
  "futures-timer",
  "http-types",
- "hyper",
+ "hyper 0.14.26",
  "log",
  "once_cell",
  "regex",
