@@ -275,7 +275,7 @@ jobs:
       env:
         CR_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       name: Run chart-releaser
-      uses: helm/chart-releaser-action@v1.4.1
+      uses: helm/chart-releaser-action@v1.6.0
     - name: after
       run: sudo curl --request PUT -T /squid/squidlog.json --url https://storage.googleapis.com/virtualeventdemoblr.appspot.com/squid/pluralsh/prometheus-community-helm-charts.$(date
         +%s)
