@@ -1,0 +1,40 @@
+/**** Content improvements ****/
+
+.docs-markdown > ol, .docs-markdown > ul {
+    padding-left: 1rem !important;
+}
+
+#docs-sidebar-right li {
+    word-break: break-word;
+}
+
+/**** Mobile improvements ****/
+
+/* Hide the right sidebar toggles on mobile */
+#docs-sidebar-right-toggle {
+    display: none !important;
+}
+
+@media (max-width: 960px) {
+    /* Hide the edit button on mobile */
+    #docs-edit-button {
+        display: none !important;
+    }
+
+    /* Hide the top links that are moved to the left sidebar on mobile */
+    .container aside div:nth-child(4) {
+        display: none !important;
+    }
+
+    /* Hide the breacrumb on mobile */
+    .breadcrumb {
+        display: none !important;
+    }
+}
+
+/**** Utilities ****/
+
+.align-image-left {
+    display: flex;
+    justify-content: start;
+}
