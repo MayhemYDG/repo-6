@@ -1378,9 +1378,15 @@ checksum = "0ea22880d78093b0cbe17c89f64a7d457941e65759157ec6cb31a31d652b05e5"
 
 [[package]]
 name = "base64"
-version = "0.21.2"
+version = "0.21.7"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "604178f6c5c21f02dc555784810edfb88d34ac2c73b2eae109655649ee73ce3d"
+checksum = "9d297deb1925b89f2ccc13d7635fa0714f12c87adce1c75356b39ca9b7178567"
+
+[[package]]
+name = "base64"
+version = "0.22.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "72b3254f16251a8381aa12e40e3c4d2f0199f8c6508fbecb9d91f575e0fbb8c6"
 
 [[package]]
 name = "base64-simd"
@@ -1512,7 +1518,7 @@ version = "0.14.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "af254ed2da4936ef73309e9597180558821cb16ae9bba4cb24ce6b612d8d80ed"
 dependencies = [
- "base64 0.21.2",
+ "base64 0.21.7",
  "bollard-stubs",
  "bytes 1.4.0",
  "chrono",
@@ -4359,7 +4365,7 @@ version = "0.18.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "cd990069640f9db34b3b0f7a1afc62a05ffaa3be9b66aa3c313f58346df7f788"
 dependencies = [
- "base64 0.21.2",
+ "base64 0.21.7",
  "bytes 1.4.0",
  "chrono",
  "http",
@@ -5531,7 +5537,7 @@ dependencies = [
  "async-compat",
  "async-trait",
  "backon",
- "base64 0.21.2",
+ "base64 0.21.7",
  "bytes 1.4.0",
  "chrono",
  "flagset",
@@ -6749,7 +6755,7 @@ version = "0.11.18"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "cde824a14b7c14f85caff81225f411faacc04a2013f41670f41443742b1c1c55"
 dependencies = [
- "base64 0.21.2",
+ "base64 0.21.7",
  "bytes 1.4.0",
  "encoding_rs",
  "futures-core",
@@ -8433,7 +8439,7 @@ dependencies = [
  "async-stream",
  "async-trait",
  "axum",
- "base64 0.21.2",
+ "base64 0.21.7",
  "bytes 1.4.0",
  "flate2",
  "futures-core",
@@ -9121,7 +9127,7 @@ dependencies = [
  "azure_identity",
  "azure_storage",
  "azure_storage_blobs",
- "base64 0.21.2",
+ "base64 0.22.1",
  "bloom",
  "bollard",
  "bytes 1.4.0",
@@ -9437,7 +9443,7 @@ version = "0.1.0"
 dependencies = [
  "async-graphql",
  "async-trait",
- "base64 0.21.2",
+ "base64 0.22.1",
  "bitmask-enum",
  "bytes 1.4.0",
  "chrono",
@@ -9596,7 +9602,7 @@ dependencies = [
  "anymap",
  "arbitrary",
  "base16",
- "base64 0.21.2",
+ "base64 0.21.7",
  "bytes 1.4.0",
  "cbc",
  "cfb-mode",
@@ -10158,7 +10164,7 @@ checksum = "c6f71803d3a1c80377a06221e0530be02035d5b3e854af56c6ece7ac20ac441d"
 dependencies = [
  "assert-json-diff",
  "async-trait",
- "base64 0.21.2",
+ "base64 0.21.7",
  "deadpool",
  "futures 0.3.28",
  "futures-timer",
