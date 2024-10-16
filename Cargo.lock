@@ -6124,6 +6124,17 @@ dependencies = [
 ]
 
 [[package]]
+name = "prettydiff"
+version = "0.7.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "abec3fb083c10660b3854367697da94c674e9e82aa7511014dc958beeb7215e9"
+dependencies = [
+ "owo-colors",
+ "pad",
+ "prettytable-rs",
+]
+
+[[package]]
 name = "prettyplease"
 version = "0.1.21"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -9549,7 +9560,7 @@ dependencies = [
  "clap 4.1.14",
  "enrichment",
  "glob",
- "prettydiff",
+ "prettydiff 0.7.0",
  "regex",
  "serde",
  "serde_json",
@@ -9635,7 +9646,7 @@ dependencies = [
  "percent-encoding",
  "pest",
  "pest_derive",
- "prettydiff",
+ "prettydiff 0.6.4",
  "prettytable-rs",
  "quickcheck",
  "quoted_printable",
