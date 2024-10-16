@@ -265,7 +265,7 @@ jobs:
         '
     - continue-on-error: true
       name: Create draft GH release
-      uses: softprops/action-gh-release@v1
+      uses: softprops/action-gh-release@v2
       with:
         body: 'TODO: Add release notes here.'
         draft: true
