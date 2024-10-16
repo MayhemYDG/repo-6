@@ -3084,11 +3084,12 @@ dependencies = [
 
 [[package]]
 name = "fakedata_generator"
-version = "0.2.4"
+version = "0.5.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "6815202b22ccd0dd16957e52e254c52392c84edafb4d3cc0161b9f30a85dbb88"
+checksum = "57b82fba4b485b819fde74012109688a9d2bd4ce7b22583ac12c9fa239f74a02"
 dependencies = [
- "rand 0.7.3",
+ "passt",
+ "rand 0.8.5",
  "serde",
  "serde_json",
 ]
@@ -5758,6 +5759,12 @@ checksum = "c705f256449c60da65e11ff6626e0c16a0a0b96aaa348de61376b249bc340f41"
 dependencies = [
  "regex",
 ]
+
+[[package]]
+name = "passt"
+version = "0.3.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "13242a5ce97f39a8095d03c8b273e91d09f2690c0b7d69a2af844941115bab24"
 
 [[package]]
 name = "paste"
