@@ -5,7 +5,7 @@ go 1.19
 replace sigs.k8s.io/cluster-api => sigs.k8s.io/cluster-api v1.4.2
 
 require (
-	github.com/google/go-cmp v0.5.9
+	github.com/google/go-cmp v0.6.0
 	github.com/onsi/ginkgo/v2 v2.9.5
 	github.com/onsi/gomega v1.27.7
 	github.com/spf13/pflag v1.0.5
