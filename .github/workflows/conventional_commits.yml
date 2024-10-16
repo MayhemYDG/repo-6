@@ -286,7 +286,7 @@ jobs:
     - continue-on-error: true
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      uses: amannn/action-semantic-pull-request@v4
+      uses: amannn/action-semantic-pull-request@v5
       with:
         requireScope: ${{ steps.config.outputs.requireScope }}
         scopes: ${{ steps.config.outputs.scopes }}
