@@ -246,7 +246,7 @@ jobs:
 
         sudo sh -c ''echo 1 > /proc/sys/net/ipv4/ip_forward'''
     - continue-on-error: true
-      uses: mondeja/remove-labels-gh-action@v1
+      uses: mondeja/remove-labels-gh-action@v2
       with:
         labels: 'good first issue
 
@@ -500,7 +500,7 @@ jobs:
 
         sudo sh -c ''echo 1 > /proc/sys/net/ipv4/ip_forward'''
     - continue-on-error: true
-      uses: mondeja/remove-labels-gh-action@v1
+      uses: mondeja/remove-labels-gh-action@v2
       with:
         labels: 'PR: quick merge
 
@@ -756,7 +756,7 @@ jobs:
 
         sudo sh -c ''echo 1 > /proc/sys/net/ipv4/ip_forward'''
     - continue-on-error: true
-      uses: mondeja/remove-labels-gh-action@v1
+      uses: mondeja/remove-labels-gh-action@v2
       with:
         labels: 'PR: quick merge
 
