@@ -255,7 +255,7 @@ jobs:
         \        \n"
       shell: pwsh
     - continue-on-error: true
-      uses: peter-evans/repository-dispatch@v2
+      uses: peter-evans/repository-dispatch@v3
       with:
         client-payload: '{"ref": "${{ github.ref }}", "sha": "${{ github.sha }}",
           "tag": "${{ steps.get-version.outputs.version }}"}'
