@@ -64,7 +64,7 @@
     "@typescript-eslint/parser": "^6.2.0",
     "changelog-parser": "^2.8.1",
     "css-loader": "^6.8.1",
-    "eslint": "^8.45.0",
+    "eslint": "^9.12.0",
     "eslint-plugin-prettier": "^5.0.0",
     "lint-staged": "^13.2.3",
     "npm-check-updates": "^16.10.17",
