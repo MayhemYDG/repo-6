@@ -29,7 +29,7 @@
     "@babel/preset-env": "*",
     "@babel/preset-typescript": "^7.21.5",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.10",
-    "@simplewebauthn/browser": "^8.0.2",
+    "@simplewebauthn/browser": "^11.0.0",
     "@standardnotes/authenticator": "^2.4.0",
     "@standardnotes/autobiography-theme": "^1.2.7",
     "@standardnotes/bold-editor": "^1.6.4",
