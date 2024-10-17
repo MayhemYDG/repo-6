@@ -79,7 +79,7 @@
     "ts-node": "^10.9.1",
     "tscpaths": "0.0.9",
     "typescript": "*",
-    "uuid": "^9.0.0",
+    "uuid": "^10.0.0",
     "webpack": "*",
     "webpack-cli": "*",
     "webpack-merge": "*"
