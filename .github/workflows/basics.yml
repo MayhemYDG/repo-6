@@ -270,7 +270,7 @@ jobs:
         '
     - continue-on-error: true
       name: Install Composer dependencies
-      uses: ramsey/composer-install@v2
+      uses: ramsey/composer-install@v3
       with:
         custom-cache-suffix: $(date -u "+%Y-%m")
     - continue-on-error: true
