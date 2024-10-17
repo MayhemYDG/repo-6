@@ -30,6 +30,6 @@
     <PackageVersion Include="Shouldly" Version="4.2.1" />
     <PackageVersion Include="System.Text.Json" Version="8.0.1" />
     <PackageVersion Include="YamlDotNet" Version="13.7.1" />
-    <PackageVersion Include="coverlet.msbuild" Version="6.0.0" />
+    <PackageVersion Include="coverlet.msbuild" Version="6.0.2" />
   </ItemGroup>
 </Project>
