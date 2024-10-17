@@ -296,7 +296,7 @@ jobs:
         '
     - continue-on-error: true
       name: Upload
-      uses: actions/upload-artifact@v3.0.0
+      uses: actions/upload-artifact@v4.4.3
       with:
         name: assets
         path: 'packages/clipper/*.chromium.zip

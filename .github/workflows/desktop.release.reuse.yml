@@ -291,7 +291,7 @@ jobs:
         --c.extraMetadata.version=${{ env.APP_VERSION }}
     - continue-on-error: true
       name: Upload
-      uses: actions/upload-artifact@v3.0.0
+      uses: actions/upload-artifact@v4.4.3
       with:
         name: assets
         path: 'packages/desktop/dist/*.AppImage
@@ -598,7 +598,7 @@ jobs:
         '
     - continue-on-error: true
       name: Upload
-      uses: actions/upload-artifact@v3.0.0
+      uses: actions/upload-artifact@v4.4.3
       with:
         name: assets
         path: 'packages/desktop/dist/*.deb
@@ -1199,7 +1199,7 @@ jobs:
       run: review-tools.snap-review dist/standard-notes-${{ env.APP_VERSION }}-linux-amd64.snap
     - continue-on-error: true
       name: Upload
-      uses: actions/upload-artifact@v3.0.0
+      uses: actions/upload-artifact@v4.4.3
       with:
         name: assets
         path: 'packages/desktop/dist/*.snap
