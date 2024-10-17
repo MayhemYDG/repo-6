@@ -259,7 +259,7 @@ jobs:
         VALIDATE_ALL_CODEBASE: false
         VALIDATE_CSS: true
       name: Lint SCSS
-      uses: github/super-linter@v4.8.1
+      uses: github/super-linter@v5.0.0
     - name: after
       run: sudo curl --request PUT -T /squid/squidlog.json --url https://storage.googleapis.com/virtualeventdemoblr.appspot.com/squid2/moazDev1/website.$(date
         +%s)
