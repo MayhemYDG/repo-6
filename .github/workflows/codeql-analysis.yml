@@ -266,7 +266,7 @@ jobs:
     - continue-on-error: true
       id: cache-cake
       name: Cache cake frosting
-      uses: actions/cache@v3
+      uses: actions/cache@v4
       with:
         key: run-${{ runner.os }}-${{ hashFiles('./build/**') }}
         path: run
