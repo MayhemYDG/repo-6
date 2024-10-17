@@ -7713,11 +7713,11 @@ __metadata:
   linkType: hard
 
 "@standardnotes/spreadsheets@npm:^1.8.1":
-  version: 1.8.1
-  resolution: "@standardnotes/spreadsheets@npm:1.8.1"
+  version: 1.8.2
+  resolution: "@standardnotes/spreadsheets@npm:1.8.2"
   dependencies:
     "@standardnotes/component-relay": "github:standardnotes/component-relay#839ff5db9bc92db9d42cad8d202ddc4df729597d"
-  checksum: d3c66eda2ae8d35215cdfb3c275ae9da23b8114cc03586793cd24985db5394b2e42fdaf9bf9088efb1d0b7e5703aadc2dde8962e0c3da6c244701f99ce5b6b87
+  checksum: 42b81dbfd7c9bc7e4e5c9d2d55dbc5f19ca417da4338e1e960aba8ff3c4b714389ecfe752cf7d92e2266d99e238a5ac42e8688e7adeb23c363a55e6249d8aad6
   languageName: node
   linkType: hard
 
