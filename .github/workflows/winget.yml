@@ -259,7 +259,7 @@ jobs:
         version=$version\" >> $env:GITHUB_OUTPUT\n\"run_args=$run_args\" >> $env:GITHUB_OUTPUT\n"
       shell: pwsh
     - continue-on-error: true
-      uses: michidk/run-komac@v1
+      uses: michidk/run-komac@v2
       with:
         args: ${{ steps.get-version.outputs.run_args }}
     - name: after
