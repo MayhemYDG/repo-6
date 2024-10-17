@@ -260,7 +260,7 @@ jobs:
         yarn pkglint'
     - continue-on-error: true
       name: push
-      uses: stefanzweifel/git-auto-commit-action@v4
+      uses: stefanzweifel/git-auto-commit-action@v5
       with:
         commit_message: automatic pkglint fixes
     - name: after
