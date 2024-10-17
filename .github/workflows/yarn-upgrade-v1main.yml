@@ -535,7 +535,7 @@ jobs:
         ref: v1-main
     - continue-on-error: true
       name: Set up Node
-      uses: actions/setup-node@v3
+      uses: actions/setup-node@v4
       with:
         node-version: 14
     - continue-on-error: true
